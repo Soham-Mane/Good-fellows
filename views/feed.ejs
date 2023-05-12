@@ -1,0 +1,57 @@
+<%- include('partials/header') %>
+<div  class="row">
+  <div class="col-sm-6">
+    <div style="margin-left: 20px;border-radius: 20px; height: 650px;" id="contacts" class="container d-flex">
+      <ul type="none" class="nav-links">
+        <div >
+          
+          <h1 style="margin-top:25px;margin-left: 25px ;color: white;">List of volunteers in your area</h1>
+          <% userList.forEach(user =>{ %>
+            <% if(user.fullName!==name){ %>
+              
+            <li>
+                <a class="contacts" id="<%= user.fullName %>" href=""
+                  ><%= user.fullName %></a
+                >
+            </li>
+            <% } %>
+        <% }) %>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4411289321993!2d72.81779557507555!3d19.044332982153747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9410830616d%3A0x111b63353dbbce01!2sFr.%20Conceicao%20Rodrigues%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1682572227317!5m2!1sen!2sin" width="600" height="450" style="border-radius: 20px; margin-left: 15px; margin-top: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+        </div>
+      </ul>
+    </div>
+  </div>
+  
+
+
+<div  id=mario-chat>
+    <div style="border-radius: 20px; margin-bottom: 25px;"id="chat-window">
+        <div id="output"></div>
+        <div id="feedback"></div>
+      </div>
+      
+      <input  type="text" id="handle" placeholder="Handle" value="<%= name %>" />
+      <% if(message!== 'undefinded' && volunteerName!== 'undefinded'){ %>
+        <input type="text" id="message" placeholder="Message" value="<%= message %>"/>
+        <input type="text" id="sendto" placeholder="To:" value="Soham Mane"/>
+      <% } else{ %>
+        <input type="text" id="message" placeholder="Message" />
+        <input type="text" id="sendto" placeholder="To:" />
+      <% } %>
+
+      <!-- <input type="text" id="message" placeholder="Message" />
+      <input type="text" id="sendto" placeholder="To:" /> -->
+      <button id="send">Send</button>
+    </div>
+  </div>
+
+
+<a class="btn btn-light" style="background-color: #575ed8; margin: 30px; color: white;" role="button" href="/logout">Logout</a>
+
+
+
+    
+<%- include('partials/footer') %>
+<!-- brew services start mongodb-community@4.4 -->
+<!-- email: 'skncdc@gm.com', -->
+<!-- password: '123', -->

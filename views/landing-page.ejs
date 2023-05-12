@@ -1,0 +1,156 @@
+<%- include('partials/header') %>
+
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+<!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img id="logo" src="./img/gflogo.png" width="75px" height="75px" ></img>
+        <div class="framing"><span> Good Fellows <br> <sub style="font-size: 30px; font-family: 'Allura', cursive;">Everything GranKids Do</span></sub></div>
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle-items" aria-controls="navbar-toggle-items" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon dropdown"></span>
+        </button>    
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content: flex-end">
+        <div class="navbar-nav">
+            <li class="dropdown nav-item">
+              <a style="font-size:20px;margin-left:20px; color:black" class="text-black nav-link nav-fonts" role="button" href="#aboutus">About us</a>
+              <!-- <a style="font-size:20px;margin-left:20px; color:black" class="text-black nav-link nav-fonts" role="button" href="about">About us</a> -->
+            </li>
+            <li class="nav-item">
+              <a style="font-size:20px;margin-left:20px;color:black !important" class="text-black nav-link text-white nav-fonts" href="#mission">Our Mission</a>
+            </li>
+            <li class="nav-item">
+              <a style="font-size:20px;margin:0 30px; color:black !important" class="text-black nav-link text-white nav-fonts" href="#contactus">Contact</a>
+            </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- navbar end -->
+
+
+<!-- header block -->
+    <div class="main backmain">  
+          <h1 class="ml3"  style="position:absolute;left:350px;top:400px;font-family: 'Pacifico', cursive;">Don't Forget to Smile :) </h1>
+        <ul style="font-size:20px;font-family: 'Staatliches', cursive; display: flex; justify-content: center;">
+        <li>
+            <a href="#" style="color:black; font-size:20px;" class="reg-links">I am an Elder &#9662;</a>
+            <ul class="elderdd dropdown">
+                <li><a class="btn reg-links" href="/elderly_signup" role="button" >Sign up for Elderly</a></li>
+                <li><a class="btn reg-links" href="/elderly_login" role="button" >Login for Elderly</a></li>
+              </ul>
+        </li>
+        <li>
+              <a href="#" style="color:black ;font-size:20px;" class="reg-links">I am a Volunteer &#9662;</a>
+            <ul class="voldd dropdown">
+                <li> <a class="btn reg-links" href="/volunteer_signup" role="button" >Sign up for Volunteers</a>
+                <li> <a class="btn reg-links" href="/volunteer_login" role="button" >Login for Volunteers</a> 
+   </li>
+              </ul>
+        </li>
+        </ul>
+ 
+      
+    </div>
+
+
+    <section class="bg-dark white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x" style="color: green;"></i>
+            <h3 class="feature-title">Easy to use.</h3>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-bullseye fa-4x" style="color: orange;"></i>
+          <h3 class="feature-title">User-Friendly</h3>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x" style="color: red;"></i>
+          <h3 class="feature-title">Help us, Help you</h3>
+         </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="bg-dark white-section" id="aboutus">
+
+    <h2 class="section-heading"style="color:black font-family: initial;">ABOUT US<h2>
+    <div class="row">
+
+      <div class="aboutus-column col-lg-6 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="clrblack">FOR ELDERS</h3>
+          </div>
+          <div class="card-body">
+            <p class="clrblack">After you register we provide you with a portal</p>
+            <p class="clrblack">In the portal after you log-in you wll be to chat with several volunteers</p>
+            <p class="clrblack">You can also host a meet for the volunteers at your location/nearest location</p>
+            <p class="clrblack">Host as many meets possible and have a great time and dont forget to smile</p>
+              <br>
+             <a class="btn bg-dark text-white" href="/elderly_signup" role="button" >Sign up for Elderly</a> 
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutus-column col-lg-6 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="clrblack">FOR VOLUNTEERS</h3>
+          </div>
+          <div class="card-body">
+            <p class="clrblack">After you register we provide you a portal</p>
+            <p class="clrblack">In the portal you will be able to chat with other elders and volunteers</p>
+            <p class="clrblack">You can attend meets hosted by elders in your near-by vicinity</p>
+            <p class="clrblack">Attend and interact as many meets possible and make an old pal smile!</p>
+              <br>
+              <br>
+            <a class="btn bg-dark text-white" href="/volunteer_signup" role="button" >Sign up for Volunteering</a> 
+          </div>
+        </div>
+      </div>
+
+     </section>  
+
+    <section id="mission" class="bg-dark white-section">
+    <h1 style="color: #1382C5">OUR MISSION<h1>
+    <p style="color:black;" class="mission-para">In a highly-populated country like India, elders are give least care and are considered a burden, we here at <span><a href="#">The Social Helper</a></span> look forward to help the older generation in need by giving them a platform to share with other volunteers and make a community of elder generation</p> 
+    
+    </section>
+  
+  <section id="contactus">
+   <div class="bg-dark white-section footer " >
+        <p>CONTACT US FOR ANY QUERY!</p>
+        <p><span class="spacing">Soham Mane: 9168003834</span>
+        <span class="spacing">Sanket Mane: 8600295685</span>
+        <span class="spacing">Joshua Lewis: 8169640483</span>
+        <span class="spacing">Nishant Patil: 8433924118</span></p>
+        
+      <i class="social-icon fab fa-facebook-f" ></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      
+    </div>
+     
+  </section>
+
+<!-- header block end -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+<%- include('partials/footer') %>
+
+<!-- The social Helper Landing Page -->
